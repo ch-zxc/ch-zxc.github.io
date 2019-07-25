@@ -7,32 +7,8 @@
     </url>
 
     <url>
-        <loc>http://ch-zxc.github.io/article/b/</loc>
-        <lastmod>2019-07-25T12:38:40.394Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://ch-zxc.github.io/article/zn/</loc>
-        <lastmod>2019-07-25T12:38:38.536Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>http://ch-zxc.github.io/article/tsgly/</loc>
-        <lastmod>2019-07-25T01:38:36.050Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
         <loc>http://ch-zxc.github.io/article/note/</loc>
-        <lastmod>2019-07-24T23:31:47.578Z</lastmod>
+        <lastmod>2019-07-25T23:53:54.924Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -40,7 +16,31 @@
 
     <url>
         <loc>http://ch-zxc.github.io/article/sort/</loc>
-        <lastmod>2019-07-24T23:24:24.733Z</lastmod>
+        <lastmod>2019-07-25T23:53:21.192Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://ch-zxc.github.io/article/tsgly/</loc>
+        <lastmod>2019-07-25T23:53:06.906Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://ch-zxc.github.io/article/b/</loc>
+        <lastmod>2019-07-25T23:52:40.433Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>http://ch-zxc.github.io/article/zn/</loc>
+        <lastmod>2019-07-25T23:52:10.560Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
