@@ -2,13 +2,6 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://ch-zxc.github.io/tags/%E9%A2%98%E8%A7%A3/</loc>
-        <lastmod>2019-07-24T14:28:45.211Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>http://ch-zxc.github.io/tags/%E7%AE%97%E6%B3%95/</loc>
         <lastmod>2019-07-24T23:24:24.733Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -17,7 +10,14 @@
 
     <url>
         <loc>http://ch-zxc.github.io/tags/%E5%85%B6%E4%BB%96/</loc>
-        <lastmod>2019-07-24T23:32:01.660Z</lastmod>
+        <lastmod>2019-07-25T01:38:03.993Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ch-zxc.github.io/tags/%E9%A2%98%E8%A7%A3/</loc>
+        <lastmod>2019-07-25T01:38:36.050Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
