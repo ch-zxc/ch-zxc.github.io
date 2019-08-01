@@ -142,14 +142,14 @@
 
                         
                         <li>
-                            <a href="/archive/">Archives</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/archive/">Archives</a>
                         </li>
                         
                     
@@ -216,9 +216,9 @@
 <p><strong>素数判断</strong>是一种在大量题目（尤其是数论）中都会出现，而你在突然忘记如何打线性筛（雾）或时限完全允许情况下，又会怎么做呢？</p>
 <h2 id="前言">前言</h2>
 <ol>
-<li>如果你是初学者，请从<strong>素数定义</strong>开始看<br>
-如果你是普及组选手，请从<strong><strong>开始看<br>
-如果你是提高组选手，请从</strong></strong>开始看<br>
+<li>如果你是初学者，请从 <strong>素数定义</strong> 开始看<br>
+如果你是普及组选手，请从 <strong>孪生素数</strong> 开始看<br>
+如果你是提高组选手，请从****开始看<br>
 如果你是大佬 或者 可以直接切掉<a href="https://www.luogu.org/problem/P4718" target="_blank" rel="noopener">这道题</a>,请不要在这篇文章上耽误你的时间</li>
 <li>本文所有的素数判定的代码均通过函数来实现</li>
 </ol>
@@ -232,11 +232,13 @@
 <p>该代码时间复杂度为O(n<sup>2</sup>)</p>
 </blockquote>
 <p>因为素数n除了1和n（即自己）外没有任何一个数可以整除它，所以通过循环遍历<em>1 ~ n</em>中每一个数，假如有任何一个数可以整除它，则这个数就不是素数，直接返回<em>false</em></p>
-<h2 id="简单的优化">简单的优化</h2>
+<h2 id="简单优化">简单优化</h2>
 <p>相信你已经学会了最基本的判定方法，我们也可以发现最基础的方法的时间复杂度在更苛刻的<strong>时限</strong>与<strong>大数据</strong>下是完全不足够的，所以我们需要更低的时间复杂度</p>
 <p>先上代码：</p>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// This file is created by Int zxc</span></span><br><span class="line"><span class="comment">// Copyright (C) 2019 Middle School Attached to Northeast Normal University, Inc.</span></span><br><span class="line"><span class="function"><span class="keyword">bool</span> <span class="title">prime</span><span class="params">(<span class="keyword">int</span> n)</span><span class="comment">//如果是素数则返回true</span></span></span><br><span class="line"><span class="function"></span>&#123;   </span><br><span class="line">    <span class="keyword">if</span>(n % <span class="number">2</span> == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;<span class="comment">//特判</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">3</span>; i &lt;= <span class="built_in">sqrt</span>(n); i = i + <span class="number">2</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(n % i == <span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>该代码时间复杂度为O($$\frac{\sqrt{n}}{2}$$)</p>
+<p>该代码时间复杂度为:</p>
+<p>$$ O(\frac{\sqrt{n}}{2}) $$</p>
+<p>因为每一个素数的</p>
 
                 
 
@@ -296,7 +298,7 @@
         <div id="toc" class="toc-article">
         <strong class="toc-title">Contents</strong>
         
-          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#素数判断"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x7D20;&#x6570;&#x5224;&#x65AD;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#前言"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">&#x524D;&#x8A00;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#素数的定义"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">&#x7D20;&#x6570;&#x7684;&#x5B9A;&#x4E49;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#素数的基本判断方法"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">&#x7D20;&#x6570;&#x7684;&#x57FA;&#x672C;&#x5224;&#x65AD;&#x65B9;&#x6CD5;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#简单的优化"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">&#x7B80;&#x5355;&#x7684;&#x4F18;&#x5316;</span></a></li></ol></li></ol>
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-1"><a class="toc-nav-link" href="#素数判断"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">&#x7D20;&#x6570;&#x5224;&#x65AD;</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#前言"><span class="toc-nav-number">1.1.</span> <span class="toc-nav-text">&#x524D;&#x8A00;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#素数的定义"><span class="toc-nav-number">1.2.</span> <span class="toc-nav-text">&#x7D20;&#x6570;&#x7684;&#x5B9A;&#x4E49;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#素数的基本判断方法"><span class="toc-nav-number">1.3.</span> <span class="toc-nav-text">&#x7D20;&#x6570;&#x7684;&#x57FA;&#x672C;&#x5224;&#x65AD;&#x65B9;&#x6CD5;</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#简单优化"><span class="toc-nav-number">1.4.</span> <span class="toc-nav-text">&#x7B80;&#x5355;&#x4F18;&#x5316;</span></a></li></ol></li></ol>
         
         </div>
       </aside>
