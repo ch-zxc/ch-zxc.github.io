@@ -200,9 +200,9 @@
                 
                     <a href="#其他" title="其他" rel="3">其他</a>
                 
-                    <a href="#算法" title="算法" rel="2">算法</a>
-                
                     <a href="#题解" title="题解" rel="1">题解</a>
+                
+                    <a href="#算法" title="算法" rel="2">算法</a>
                 
             </div>
 
@@ -213,6 +213,25 @@
                 <span class="fa fa-tag listing-seperator" id="其他">
                     <span class="tag-text">其他</span>
                 </span>
+                
+                  <!-- <li class="listing-item">
+                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
+                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+                  </li> -->
+                 <div class="post-preview">
+                     <a href="/article/note/">
+                        <h2 class="post-title">
+                            笔记
+                        </h2>
+                        
+                            <h3 class="post-subtitle">
+                                Learn and write everyday.
+                            </h3>
+                        
+                    </a>
+                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
+                </div>
+                <hr>
                 
                   <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -252,19 +271,22 @@
                 </div>
                 <hr>
                 
+            </div>
+            
+            <div class="one-tag-list">
+                <span class="fa fa-tag listing-seperator" id="题解">
+                    <span class="tag-text">题解</span>
+                </span>
+                
                   <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <div class="post-preview">
-                     <a href="/article/note/">
+                     <a href="/article/tsgly/">
                         <h2 class="post-title">
-                            笔记
+                            洛谷P3955 图书管理员
                         </h2>
-                        
-                            <h3 class="post-subtitle">
-                                Learn and write everyday.
-                            </h3>
                         
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
@@ -277,25 +299,6 @@
                 <span class="fa fa-tag listing-seperator" id="算法">
                     <span class="tag-text">算法</span>
                 </span>
-                
-                  <!-- <li class="listing-item">
-                  <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
-                  <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
-                  </li> -->
-                 <div class="post-preview">
-                     <a href="/article/prime/">
-                        <h2 class="post-title">
-                            素数判断
-                        </h2>
-                        
-                            <h3 class="post-subtitle">
-                                如何快速简洁地判断质数
-                            </h3>
-                        
-                    </a>
-                    <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
-                </div>
-                <hr>
                 
                   <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
@@ -316,22 +319,19 @@
                 </div>
                 <hr>
                 
-            </div>
-            
-            <div class="one-tag-list">
-                <span class="fa fa-tag listing-seperator" id="题解">
-                    <span class="tag-text">题解</span>
-                </span>
-                
                   <!-- <li class="listing-item">
                   <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <div class="post-preview">
-                     <a href="/article/tsgly/">
+                     <a href="/article/prime/">
                         <h2 class="post-title">
-                            洛谷P3955 图书管理员
+                            素数判断
                         </h2>
+                        
+                            <h3 class="post-subtitle">
+                                如何快速简洁地判断质数
+                            </h3>
                         
                     </a>
                     <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
@@ -508,21 +508,6 @@
 <img src="http://ch-zxc.github.io/img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
