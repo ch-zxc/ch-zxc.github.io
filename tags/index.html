@@ -141,14 +141,14 @@
 
                         
                         <li>
-                            <a href="/tags/">Tags</a>
+                            <a href="/about/">About</a>
                         </li>
                         
                     
 
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/tags/">Tags</a>
                         </li>
                         
                     
@@ -219,13 +219,13 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <div class="post-preview">
-                     <a href="/article/zn/">
+                     <a href="/article/b/">
                         <h2 class="post-title">
-                            博客食用指南
+                            援助一下！秋梨膏！
                         </h2>
                         
                             <h3 class="post-subtitle">
-                                请先阅读本文章
+                                好人一生平安
                             </h3>
                         
                     </a>
@@ -238,13 +238,13 @@
                   <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
                   </li> -->
                  <div class="post-preview">
-                     <a href="/article/b/">
+                     <a href="/article/zn/">
                         <h2 class="post-title">
-                            援助一下！秋梨膏！
+                            博客食用指南
                         </h2>
                         
                             <h3 class="post-subtitle">
-                                好人一生平安
+                                请先阅读本文章
                             </h3>
                         
                     </a>
@@ -508,6 +508,21 @@
 <img src="http://ch-zxc.github.io/img/icon_wechat.png" width="0" height="0" />
 <!-- Migrate from head to bottom, no longer block render and still work -->
 
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<!--script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 </body>
 
 </html>
